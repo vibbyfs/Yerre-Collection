@@ -180,7 +180,7 @@ li {
   height: calc(100vh - 4rem);
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
-  background-position: 100%;
+  background-position: 80%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
