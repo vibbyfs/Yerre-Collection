@@ -59,15 +59,13 @@ li {
 
 .nav__img {
   height: 100%;
-  width: 6rem;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav__logo {
-  width: 85px;
+  width: 100px;
 }
 
 .nav__toggle {
@@ -174,7 +172,7 @@ li {
 .collection__dropdown2 ul li a {
   display: block;
   color: white;
-  padding-bottom: 6px;
+  padding-bottom: 15px;
 }
 
 /* Media Query untuk Layar Handphone */
