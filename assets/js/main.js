@@ -1,14 +1,29 @@
 // ============== NAV DROPDOWN SHOW ==============
-const navToggle = document.querySelector(".nav__toggle");
-const navToggleIcon = document.querySelector(".nav__toggle i");
-const navDropdown = document.querySelector(".nav__dropdown");
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav__toggle");
+  const navToggleIcon = document.querySelector(".nav__toggle i");
+  const navDropdown = document.querySelector(".nav__dropdown");
 
-navToggle.onclick = function () {
-  navDropdown.classList.toggle("open");
-  const isOpen = navDropdown.classList.contains("open");
+  // Fungsi untuk men-toggle dropdown
+  navToggle.onclick = function (event) {
+    event.stopPropagation(); // Hentikan event bubbling
+    navDropdown.classList.toggle("open");
+    const isOpen = navDropdown.classList.contains("open");
 
-  navToggleIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
-};
+    navToggleIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+  };
+
+  // Tambahkan event listener untuk mendeteksi klik di luar dropdown
+  document.addEventListener("click", function (event) {
+    const isClickInside =
+      navDropdown.contains(event.target) || navToggle.contains(event.target);
+
+    if (!isClickInside) {
+      navDropdown.classList.remove("open");
+      navToggleIcon.classList = "fa-solid fa-bars";
+    }
+  });
+});
 
 // ============== SUB NAV DROPDOWN SHOW ==============
 document.addEventListener("DOMContentLoaded", function () {
