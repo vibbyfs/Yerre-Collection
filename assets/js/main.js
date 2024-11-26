@@ -90,3 +90,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/*==================== WHATS APP POP UP ====================*/
+// Pilih elemen popup WhatsApp dan footer
+const whatsappPopup = document.getElementById("whatsapp-popup");
+const footer = document.getElementById("footer-rights");
+
+// Fungsi untuk mengecek posisi scroll
+function checkScrollPosition() {
+  // Posisi bawah dari jendela viewport
+  const windowBottom = window.innerHeight + window.scrollY;
+  // Posisi atas dari footer
+  const footerTop = footer.offsetTop;
+
+  // Jika posisi bawah jendela melebihi posisi atas footer, sembunyikan popup
+  if (windowBottom >= footerTop) {
+    whatsappPopup.style.display = "none";
+  } else {
+    whatsappPopup.style.display = "block";
+  }
+}
+
+// Tambahkan event listener untuk scroll
+window.addEventListener("scroll", checkScrollPosition);
+
+// Panggil fungsi saat halaman dimuat
+checkScrollPosition();
