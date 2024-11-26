@@ -82,8 +82,8 @@ li {
   right: 14rem;
   top: 4.5rem;
   width: 150px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -128,7 +128,7 @@ li {
   top: 4.5rem;
   height: 0;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
@@ -175,24 +175,12 @@ li {
   padding-bottom: 15px;
 }
 
-/* Media Query untuk Layar Handphone */
-@media screen and (max-width: 768px) {
-  .nav__dropdown {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.collection__dropdown2 {
-  position: static;
-  width: 100%;
-}
-
 /* =============== HOME ===============*/
 .home {
   height: calc(100vh - 4rem);
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -205,17 +193,10 @@ li {
 }
 
 .home__container h1 {
-  color: rgb(255, 102, 102);
+  color: white;
   font-size: 2.5rem;
   font-weight: 900;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.home__container p {
-  color: rgb(255, 102, 102);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .home__button {
@@ -248,6 +229,16 @@ li {
   .nav__dropdown {
     left: 2rem;
     width: unset;
+  }
+
+  .nav__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection__dropdown2 {
+    position: static;
+    width: 100%;
   }
 }
 
