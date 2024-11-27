@@ -419,6 +419,10 @@ li {
   .footer__content {
     flex-direction: column;
   }
+  .footer__rights {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /* Tablet */
