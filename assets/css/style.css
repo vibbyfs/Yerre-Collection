@@ -95,7 +95,7 @@ li {
 
 .collection__dropdown.open {
   display: block;
-  height: 4.5rem;
+  height: max-content;
 }
 
 .nav__link .link__collection {
@@ -140,7 +140,7 @@ li {
 }
 
 .nav__dropdown.open {
-  height: 9rem;
+  height: max-content;
 }
 
 .nav__dropdown li {
@@ -190,7 +190,7 @@ li {
   height: calc(100vh + 4rem);
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
-  background-position: 80%;
+  background-position: 75%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -231,11 +231,13 @@ li {
   max-width: 1000px; /* Sesuaikan dengan ukuran yang diinginkan */
   margin: auto;
   height: 100vh;
+  border: none;
 }
 video {
   width: 100%;
   height: auto;
   display: block;
+  border: 2px solid none;
 }
 
 .story__container {
@@ -367,11 +369,13 @@ video {
     padding: 8rem 2rem 5rem;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
+    border: none;
   }
   video {
     width: 100%;
     height: 300px;
     display: block;
+    border: 2px solid none;
   }
   .footer__content {
     flex-direction: column;
@@ -413,11 +417,13 @@ video {
     padding: 8rem 2rem 0rem;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
+    border: none;
   }
   video {
     width: 100%;
     height: 500px;
     display: block;
+    border: 2px solid none;
   }
   .footer__content {
     flex-direction: column;
@@ -443,11 +449,13 @@ video {
     padding: 5rem 2rem 5rem;
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
+    border: none;
   }
   video {
     width: 100%;
     height: 500px;
     display: block;
+    border: 2px solid none;
   }
 }
 
@@ -465,11 +473,13 @@ video {
     padding: 0rem 2rem 5rem;
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
+    border: none;
   }
   video {
     width: 100%;
     height: 600px;
     display: block;
+    border: 2px solid none;
   }
 }
 
@@ -487,11 +497,13 @@ video {
     padding: 0rem 2rem 5rem;
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
+    border: none;
   }
   video {
     width: 100%;
     height: 600px;
     display: block;
+    border: 2px solid none;
   }
 }
 
